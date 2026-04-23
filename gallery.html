@@ -3,92 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet the snakes</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
 </head>
-      <style>
-        body{
-          background-color: blanchedalmond;
-        }
-      .container card {
-         border-radius: 8px;        
-                 padding: 20px;  
-                 width: 400px; 
-                   margin-top: auto; 
-                   margin-right:auto ;    
-                 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      }
-        </style>
-    <head>
-      <body>
-      
-          
-        
-        
-<header>
-  <img src="C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\logo.png" alt=" My Logo" width="150" class="logo">
-    <nav>
-           <a href="index.html">Home</a> |
-            <a href="about.html">About us</a> |
-            <a href="snakes.html"> Snakes</a>|
-            <a href="gallery.html"> Gallery</a> | 
-            <a href="visit.html"> visit </a>| 
-            <a href="contact.html">Contact</a>    
-    </nav>
-</header>
+<body>
+    <div class="header">
+        <div class="logo">
 
-        <div class="slideshow-container">
-          <h1>park 1</h1>
-    <div class=" mySlides fade">
-    <img src= "C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image1.jpg "style="width:50%;">
-  </div>
-  <div class="mySlides fade">
-    <img src="C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image2.jpg " style="width:50%;">
-  </div>
-  <div class="mySlides fade">
-    <img src="C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image3.jpg "style= "width:50%;">
-  </div>
-  <div class="mySlides fade">
-    <img src= "C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image4.jpg"style= "width: 50%">
-  </div>
-  
+        </div>
+    </div>
 
-  <div class="slideshow-container">
-          <h1>park 2</h1>
-    <div class=" mySlides fade">
-    <img src= "C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image1.jpg "style="width:50%;">
+    <!--Navigation-->
+    <div class="nav">
+        <a href="Index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Snakes.html">Snakes</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Visit.html">Visit</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <!--Park cards-->
+    <div class="Park-1">
+        <h4>Park 1</h4>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
   </div>
-  <div class="mySlides fade">
-    <img src="C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image2.jpg " style="width:50%;">
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
   </div>
-  <div class="mySlides fade">
-    <img src="C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image3.jpg "style= "width:50%;">
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
   </div>
-  <div class="mySlides fade">
-    <img src= "C:\Users\Nomsa Audrey Soloba\OneDrive\Desktop\images\image4.jpg"style= "width: 50%">
+</div>
+
+<div class="Park-1">
+        <h4>Park 2</h4>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
   </div>
-
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-</script>
-
-
-<footer>
-    <p>@copyright</p>
-</footer>    
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+  </div>
+</div>
+    
 </body>
+<footer>@Copyright</footer>
 </html>
