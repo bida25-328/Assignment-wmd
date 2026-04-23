@@ -6,6 +6,7 @@
     <title>Contact</title>
 </head>
 <body>
+  <header>
     <div class="header">
         <div class="logo">
 
@@ -14,14 +15,70 @@
 
     <!--Navigation-->
     <div class="nav">
-        <a href="Index.html">Home</a>
-        <a href="About Us.html">About Us</a>
-        <a href="Snakes.html">Snakes</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="Visit.html">Visit</a>
-        <a href="Contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="snakes.html">Snakes</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="visit.html">Visit</a>
+        <a href="contact.html">Contact</a>
+    </div>
+  </header>
+<main>
+    <div class="contacts">
+      <div class="box">
+        <h2>Park 1 Contacts</h2>
+        <p>Address, phone, email info here...</p>
+      </div>
+      <div class="box">
+        <h2>Park 2 Contacts</h2>
+        <p>Address, phone, email info here...</p>
+      </div>
     </div>
 
-    
+    <div class="form-section">
+      <h2>ENQUIRY FORM</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+          <label for="details">Details</label>
+          <textarea id="details" name="details"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Contact Method</label>
+          <input type="radio" id="contactEmail" name="contactMethod" value="email">
+          <label for="contactEmail">Email</label>
+          <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+          <label for="contactPhone">Phone</label>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date of Enquiry</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>@copyright</p>
+  </footer>
 </body>
 </html>
+    
