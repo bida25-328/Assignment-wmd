@@ -1,0 +1,24 @@
+.nav{
+   width:100%;
+    max-width:1100px;
+    margin:20px auto;
+    background: white;
+    border-radius:12px;
+    padding:15px 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-sizing:border-box;
+}
+.nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav a :hover{
+    background-color: rgb(29, 109, 29);
+    color: white;
+}
