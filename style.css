@@ -21,4 +21,46 @@
 .nav a :hover{
     background-color: rgb(29, 109, 29);
     color: white;
+
+}
+.logo {
+    padding: 20px;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-direction: column;
+}
+.contact {
+  background-color: rgb(194, 208, 251);
+  margin: 20px;
+  padding: 40px;
+}
+.box h4{
+    margin-top: 0;
+    font-weight: bold;
+}
+.Content{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.mission{
+    width: 50%;
+}
+
+.origin{
+    width: 50%;
+}
+
+.box{
+    background: #02d862;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(11, 0, 22);
+}
+body{
 }
