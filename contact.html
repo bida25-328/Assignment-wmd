@@ -17,62 +17,105 @@
         <a href="contact.html">Contact</a>
     </div>
 </div>
-<main>
-    <div class="contacts">
-      <div class="box">
-        <h2>Park 1 Contacts</h2>
-        <p>Address, phone, email info here...</p>
+<!-- Park Contacts -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Park Contacts</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-info-grid">
+      <div class="info-block">
+        <h3>Park 1 — Gaborone</h3>
+        <p>
+          📍 Plot 5432, Lobatse Road, Gaborone<br/><br/>
+          📞 +267 300 1111<br/>
+          ✉️ park1@serpentine.co.bw<br/><br/>
+          Mon – Sat: 08:00 – 17:00<br/>
+          Sun: 09:00 – 15:00
+        </p>
       </div>
-      <div class="box">
-        <h2>Park 2 Contacts</h2>
-        <p>Address, phone, email info here...</p>
+      <div class="info-block">
+        <h3>Park 2 — Francistown</h3>
+        <p>
+          📍 Stand 881, Blue Jacket Street, Francistown<br/><br/>
+          📞 +267 300 2222<br/>
+          ✉️ park2@serpentine.co.bw<br/><br/>
+          Mon – Sat: 08:00 – 17:00<br/>
+          Sun: Closed
+        </p>
       </div>
     </div>
+  </div>
 
-    <div class="form-section">
-      <h2>ENQUIRY FORM</h2>
-      <form>
+  <!-- Enquiry Form -->
+  <div class="section" style="margin-top:0;">
+    <div class="form-block">
+      <h3>Enquiry Form</h3>
+      <div class="form-grid">
+
         <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="e.g. Thabo Molefe"/>
         </div>
 
         <div class="form-group">
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com"/>
         </div>
 
         <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone">
-        </div>
-
-        <div class="form-group">
-          <label for="details">Details</label>
-          <textarea id="details" name="details"></textarea>
-        </div>
-
-        <div class="form-group">
-          <label>Preferred Contact Method</label>
-          <input type="radio" id="contactEmail" name="contactMethod" value="email">
-          <label for="contactEmail">Email</label>
-          <input type="radio" id="contactPhone" name="contactMethod" value="phone">
-          <label for="contactPhone">Phone</label>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+267 7X XXX XXX"/>
         </div>
 
         <div class="form-group">
           <label for="date">Date of Enquiry</label>
-          <input type="date" id="date" name="date">
+          <input type="date" id="date"/>
         </div>
 
-        <button type="submit">Submit</button>
-      </form>
+        <div class="form-group full">
+          <label for="details">Details</label>
+          <textarea id="details" placeholder="Tell us what you'd like to know — bookings, schools visits, research partnerships, etc."></textarea>
+        </div>
+
+        <div class="form-group full">
+          <label>Preferred Contact Method</label>
+          <div class="radio-group">
+            <label><input type="radio" name="contact_method" value="email" checked/> A. Email</label>
+            <label><input type="radio" name="contact_method" value="phone"/> B. Phone</label>
+          </div>
+        </div>
+
+        <div class="form-footer-row">
+          <p style="font-size:0.8rem;color:var(--muted);">We respond within 1–2 business days.</p>
+          <button class="btn-submit" onclick="handleSubmit()">Submit Enquiry</button>
+        </div>
+
+      </div>
     </div>
-  </main>
+  </div>
 
   <footer>
-    <p>@copyright</p>
+    <p class="footer-copy">© 2025 Serpentine Snake Sanctuary. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="visit.html">Visit</a>
+      <a href="about.html">About</a>
+    </div>
   </footer>
+
+  <script>
+    function handleSubmit() {
+      const name = document.getElementById('fullname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!name || !email) {
+        alert('Please fill in at least your name and email address.');
+        return;
+      }
+      alert('Thank you, ' + name + '! Your enquiry has been received. We will be in touch shortly.');
+      document.querySelectorAll('input, textarea').forEach(el => el.value = '');
+    }
+  </script>
+
 </body>
 </html>
-    
